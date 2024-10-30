@@ -70,10 +70,10 @@
         <nav id="sidebar" class="sidebar">
             <div class="sidebar-content js-simplebar">
                 <a class='sidebar-brand' href='index.html'>
-                    <img src="{{ asset('images/cmulogo.png') }}" class="img-fluid rounded-circle me-1 mt-n2 mb-n2"
+                    <img src="{{ asset('images/baclogo.png') }}" class="img-fluid rounded-circle me-1 mt-n2 mb-n2"
                         alt="Chris Wood" width="40" height="40" />
 
-                    <span class="align-middle me-3">CMU</span>
+                    <span class="align-middle me-3">CMU | OBPMS</span>
                 </a>
                 @include('layouts.navigation')
 

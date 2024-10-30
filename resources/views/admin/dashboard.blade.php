@@ -7,8 +7,6 @@
             <div class="col-auto d-none d-sm-block">
                 <h3>Dashboard</h3>
             </div>
-
-
         </div>
         <div class="row">
             <div class="col-12 col-sm-6 col-xxl-3 d-flex">
@@ -16,13 +14,13 @@
                     <div class="card-body py-4">
                         <div class="d-flex align-items-start">
                             <div class="flex-grow-1">
-                                <h3 class="mb-2">$ 24.300</h3>
-                                <p class="mb-2">Projects</p>
+                                <h3 class="mb-2">5</h3>
+                                <p class="mb-2">Items</p>
 
                             </div>
                             <div class="d-inline-block ms-3">
                                 <div class="stat">
-                                    <i class="align-middle text-success" data-lucide="layout"></i>
+                                    <i class="align-middle text-success" data-lucide="package-open"></i>
                                 </div>
                             </div>
                         </div>
@@ -34,13 +32,13 @@
                     <div class="card-body py-4">
                         <div class="d-flex align-items-start">
                             <div class="flex-grow-1">
-                                <h3 class="mb-2">$ 24.300</h3>
-                                <p class="mb-2">List of Materials</p>
+                                <h3 class="mb-2">45</h3>
+                                <p class="mb-2">Units</p>
 
                             </div>
                             <div class="d-inline-block ms-3">
                                 <div class="stat">
-                                    <i class="align-middle text-success" data-lucide="briefcase"></i>
+                                    <i class="align-middle text-success" data-lucide="school"></i>
                                 </div>
                             </div>
                         </div>
@@ -53,12 +51,12 @@
                         <div class="d-flex align-items-start">
                             <div class="flex-grow-1">
                                 <h3 class="mb-2">43</h3>
-                                <p class="mb-2">List of Labors</p>
+                                <p class="mb-2">Account Codes</p>
 
                             </div>
                             <div class="d-inline-block ms-3">
                                 <div class="stat">
-                                    <i class="align-middle text-danger" data-lucide="users"></i>
+                                    <i class="align-middle text-danger" data-lucide="binary"></i>
                                 </div>
                             </div>
                         </div>
@@ -70,13 +68,13 @@
                     <div class="card-body py-4">
                         <div class="d-flex align-items-start">
                             <div class="flex-grow-1">
-                                <h3 class="mb-2">$ 18.700</h3>
-                                <p class="mb-2">List of Equipments</p>
+                                <h3 class="mb-2">14</h3>
+                                <p class="mb-2">Users</p>
 
                             </div>
                             <div class="d-inline-block ms-3">
                                 <div class="stat">
-                                    <i class="align-middle text-info" data-lucide="truck"></i>
+                                    <i class="align-middle text-info" data-lucide="users"></i>
                                 </div>
                             </div>
                         </div>

@@ -1,5 +1,9 @@
 <?php
 
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\BACController;
+use App\Http\Controllers\BudgetController;
+use App\Http\Controllers\EndUserController;
 use App\Http\Controllers\EquipmentController;
 use App\Http\Controllers\LaborController;
 use App\Http\Controllers\MaterialController;
@@ -13,6 +17,7 @@ use App\Http\Controllers\ProjectParticularLaborController;
 use App\Http\Controllers\ProjectParticularMaterialController;
 use App\Http\Controllers\ProjectSignatoryController;
 use App\Http\Controllers\ProjectTechnicalPersonnelController;
+use App\Http\Middleware\CheckRole;
 use App\Models\Project;
 use App\Models\ProjectMinimumEquipment;
 use App\Models\ProjectParticular;
@@ -39,5 +44,25 @@ Route::middleware('auth')->group(function () {
     Route::put('profile', [\App\Http\Controllers\ProfileController::class, 'update'])->name('profile.update');
 });
 
+Route::get('unauthorized-page', [PageController::class, 'unauthorizedPage'])->name('unauthorizedPage');
 
-Route::get('dashboard', [PageController::class, 'dashboard'])->name('dashboard');
+
+// ADMIN
+Route::middleware('auth', CheckRole::class . ':admin')->group(function () {
+    Route::get('admin-dashboard', [AdminController::class, 'adminDashboard'])->name('adminDashboard');
+});
+
+// BAC
+Route::middleware('auth', CheckRole::class . ':bac')->group(function () {
+    Route::get('bac-dashboard', [BACController::class, 'bacDashboard'])->name('bacDashboard');
+});
+
+// BUDGET
+Route::middleware('auth', CheckRole::class . ':budget')->group(function () {
+    Route::get('budget-dashboard', [BACController::class, 'budgetDashboard'])->name('budgetDashboard');
+});
+
+// USER
+Route::middleware('auth', CheckRole::class . ':user')->group(function () {
+    Route::get('user-dashboard', [BACController::class, 'userDashboard'])->name('userDashboard');
+});

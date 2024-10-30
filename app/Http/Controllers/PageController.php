@@ -6,10 +6,10 @@ use Illuminate\Http\Request;
 
 class PageController extends Controller
 {
-    //
 
-    public function dashboard()
+
+    public function unauthorizedPage()
     {
-        return view('pages.dashboard');
+        return view('unauthorized_page');
     }
 }
